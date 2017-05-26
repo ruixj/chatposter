@@ -13,7 +13,7 @@ def text_reply(msg):
     #msg.user.send('%s: %s' % (msg.type, msg.text))
     if msg['Type'] == SHARING:
         #record = [msg['Text'],msg['Url']]
-        print 'record .............: ',msg 
+        #print 'record .............: ',msg 
         #postlinksDAO.addLink(record)
         postlinksDAO.addLinkByPost(msg)
 
