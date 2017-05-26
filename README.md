@@ -1,1 +1,3 @@
 # chatposter
+
+pip install itchat
