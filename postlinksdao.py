@@ -5,7 +5,7 @@ import urllib2
 import json
 
 class postlinksDAO:
-    url = 'http://localhost:8080/seckill/postlinks/postlink'
+    url = 'http://www.microlele.com:8080/seckill/postlinks/postlink'
     def __init__(self):
         pass
 
