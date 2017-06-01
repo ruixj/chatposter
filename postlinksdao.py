@@ -1,5 +1,5 @@
  # -*- coding: utf-8 -*-
-import MySQLdb  
+#import MySQLdb  
 import urllib
 import urllib2
 import json
@@ -9,24 +9,24 @@ class postlinksDAO:
     def __init__(self):
         pass
 
-    @staticmethod
-    def addLink(value):
-        try:  
-            conn = MySQLdb.connect(host='localhost',user='root',passwd='root',port=3306)  
-            conn.set_character_set('utf8')
-            cur = conn.cursor()  
+#    @staticmethod
+#    def addLink(value):
+#        try:  
+#            conn = MySQLdb.connect(host='localhost',user='root',passwd='root',port=3306)  
+#            conn.set_character_set('utf8')
+#            cur = conn.cursor()  
           
-            conn.select_db('seckill')  
+#            conn.select_db('seckill')  
           
             #value = ['http://http://blog.csdn.net/acdreamers/article/details/21186457']  
-            cur.execute('insert into post_links(title,link_name) values(%s,%s)',value)  
+#            cur.execute('insert into post_links(title,link_name) values(%s,%s)',value)  
           
-            conn.commit()  
-            cur.close()  
-            conn.close()  
+#            conn.commit()  
+#            cur.close()  
+#            conn.close()  
 
-        except MySQLdb.Error,msg:  
-            print "MySQL Error %d: %s" %(msg.args[0],msg.args[1])  
+#        except MySQLdb.Error,msg:  
+#            print "MySQL Error %d: %s" %(msg.args[0],msg.args[1])  
     @staticmethod
     def addLinkByPost(recorddict):
         try:  
